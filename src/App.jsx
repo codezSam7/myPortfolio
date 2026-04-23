@@ -270,11 +270,11 @@ export default function Portfolio() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="h-40 rounded-2xl bg-gradient-to-br from-slate-800 to-slate-700 mb-6 flex items-center justify-center text-slate-400 text-sm text-center px-4">
+                  <div className="h-40 rounded-2xl overflow-hidden mb-6 group">
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="h-full w-full object-cover rounded-2xl"
+                      className="h-full w-full object-cover rounded-2xl transition duration-500 group-hover:scale-110"
                     />
                   </div>
                 </a>
@@ -336,6 +336,56 @@ export default function Portfolio() {
                 Clear updates and collaboration throughout the development
                 process.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Hire Me */}
+      <section className="px-4 sm:px-6 py-16 border-t border-slate-900">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-4">Hire Me</h2>
+            <p className="text-slate-400 max-w-2xl mx-auto">
+              I help startups, businesses, and individuals build fast, modern,
+              and responsive websites that create trust and attract customers.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-slate-900 border border-slate-800 rounded-[2rem] p-6 hover:border-cyan-500 hover:-translate-y-2 transition duration-300">
+              <h3 className="text-xl font-semibold mb-3">Business Websites</h3>
+              <p className="text-slate-400 leading-relaxed text-sm sm:text-base mb-4">
+                Professional websites for brands, small businesses, and
+                organizations looking to build a strong online presence.
+              </p>
+              <span className="text-cyan-400 font-semibold">
+                Starting from simple, modern layouts
+              </span>
+            </div>
+
+            <div className="bg-slate-900 border border-slate-800 rounded-[2rem] p-6 hover:border-cyan-500 hover:-translate-y-2 transition duration-300">
+              <h3 className="text-xl font-semibold mb-3">Web Applications</h3>
+              <p className="text-slate-400 leading-relaxed text-sm sm:text-base mb-4">
+                Custom systems like dashboards, management tools, voting
+                platforms, and marketplaces built for performance.
+              </p>
+              <span className="text-cyan-400 font-semibold">
+                Functional, scalable, and responsive
+              </span>
+            </div>
+
+            <div className="bg-slate-900 border border-slate-800 rounded-[2rem] p-6 hover:border-cyan-500 hover:-translate-y-2 transition duration-300">
+              <h3 className="text-xl font-semibold mb-3">
+                Frontend Development
+              </h3>
+              <p className="text-slate-400 leading-relaxed text-sm sm:text-base mb-4">
+                Pixel-perfect React interfaces with clean layouts, smooth
+                interactions, and mobile responsiveness.
+              </p>
+              <span className="text-cyan-400 font-semibold">
+                Clean UI with modern technologies
+              </span>
             </div>
           </div>
         </div>
